@@ -1408,6 +1408,7 @@ export class Instrument {
     public fadeOut: number = Config.fadeOutNeutral;
     public envelopeCount: number = 0;
     public transition: number = Config.transitions.dictionary["normal"].index;
+    public slideTicks: number = 3;
     public pitchShift: number = 0;
     public detune: number = 0;
     public vibrato: number = 0;
@@ -6746,7 +6747,7 @@ class EnvelopeComputer {
                 const noteEndTick: number = tone.noteEndPart * Config.ticksPerPart;
                 const noteLengthTicks: number = noteEndTick - noteStartTick;
                 const maximumSlideTicks: number = noteLengthTicks * 0.5;
-                const slideTicks: number = Math.min(maximumSlideTicks, transition.slideTicks);
+                const slideTicks: number = Math.min(maximumSlideTicks, instrument.slideTicks);
                 if (tone.prevNote != null && !tone.forceContinueAtStart) {
                     if (tickTimeStart - noteStartTick < slideTicks) {
                         prevSlideStart = true;

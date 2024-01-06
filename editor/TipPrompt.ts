@@ -519,6 +519,12 @@ export class TipPrompt implements Prompt {
 					p("This setting is a multiplier applied to the second voice (if applicable)."),
 				);
 			} break;
+			case "slideSpeedSlider": {
+				message = div(
+					h2("Slide Speed"),
+					p("This slider controls how fast/slow the slide transition is. In other audio software, this setting is sometimes referred to as \"Portamento\"."),
+				);
+			} break;
 
 			default:
 				// Check for modSetinfo#
