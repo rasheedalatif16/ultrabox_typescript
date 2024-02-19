@@ -1,7 +1,7 @@
 # UltraBox
 
-UltraBox is an online tool for sketching and sharing instrumental music.
-You can find it [here](https://ultraabox.github.io).
+pandinboxis an online tool for sketching and sharing instrumental music.
+You can find it [here](https://pandinboxing.github.io).
 It is a modification of Goldbox, which itself is a modification of JummBox, which inturn is a modification of the [original BeepBox](https://beepbox.co).
 
 The goal of UltraBox is to combine every single beepbox mod into one. Feel free to contribute!
